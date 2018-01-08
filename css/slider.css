@@ -1,0 +1,38 @@
+.slidera{
+  width: 85%;
+
+  margin:auto;
+  overflow: hidden;
+}
+.slidera ul{
+display: flex;
+width: 300%;
+animation: slidere 17s infinite alternate;
+animation-timing-function: ease-in-out;
+
+}
+.texto-centro{
+  text-align: center;
+}
+
+@keyframes  slidere{
+  0%{margin-left: 0;}
+  35%{margin-left: 0;}
+
+  40%{margin-left: -100%;}
+  76%{margin-left: -100%;}
+
+  81%{margin-left: -200%;}
+  100%{margin-left: -200%;}
+
+
+
+
+}
+.slidera li{
+  width: 100%;
+  list-style: none;
+}
+.slidera img{
+width: 100%;
+}
