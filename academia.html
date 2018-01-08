@@ -2,28 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/cursos.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/redesSociales.css">
+    <link rel="stylesheet" type="text/css" href="css/textoBienvenida.css">
 
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Caveat|Comfortaa|Encode+Sans+Expanded|Amatic+SC" rel="stylesheet">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <link rel="stylesheet" href="css/redesSociales.css">
-      <link rel="stylesheet" href="css/textoBienvenida.css">
-      <link rel="stylesheet" type="text/css" href="css/cursos.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Caveat|Comfortaa|Encode+Sans+Expanded" rel="stylesheet">
-
-  <title>CEMC</title>
+      
+    <title>CEMC</title>
 </head>
 
 
   <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<!--Inicio Nav Bar-->
+<div class="navbar-fixed">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <div class="row">
+          <div class="col s12">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#" target="_blank">Inicio<i class="right material-icons">home</i> </a></li>
+              <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">¿Quienes somos? <i class="right material-icons">people</i></a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+              <li><a href="">Login<i class="right material-icons">input</i></a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Sass</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Components</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Javascript</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax-container" style="height:100vh;">
+      <div class="parallax">
+        <img class="responsive-img" style="filter: opacity(35%);" src="1.JPG">
+      </div>
+
+  </div>
+<!--Fin Barra -->
+
 
 <!--INICIO REDES SOCIALES -->
     <div class="social">
@@ -241,7 +278,11 @@
   </div>
   <!-- End Cursos --> 
  
-
+<script>
+      $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+    </script>
 
   </body>
 </html>
