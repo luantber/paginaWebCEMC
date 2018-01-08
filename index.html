@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/cursos.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -13,6 +14,7 @@
 
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="HTTP://fonts.googleapis.com/css?family=Amatic+SC" />
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
@@ -23,10 +25,74 @@
   <title>CEMC</title>
 </head>
 
+<style> 
+    body {background-color:#555;}
+    .navbar-fixed {position: absolute;z-index:999999999;}
+    nav ul a{
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 130%;
+    }
+    
+    .titulo{
+      font-family:"Amatic SC";
+      font-weight:bold;
+    }
+
+    .descr{
+      font-family: Comfortaa;
+
+    }
+
+
+
+</style>
 
   <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<!--Inicio Nav Bar-->
+<div class="navbar-fixed">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <div class="row">
+          <div class="col s12">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#" target="_blank">Inicio<i class="right material-icons">home</i> </a></li>
+              <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">¿Quienes somos? <i class="right material-icons">people</i></a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+              <li><a href="">Login<i class="right material-icons">input</i></a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Sass</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Components</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Javascript</a></li>
+          <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax-container" style="height:100vh;">
+      <div class="parallax">
+        <img class="responsive-img" src="1.jpg">
+      </div>
+
+  </div>
+<!--Fin Barra -->
+
+
+
+
+
 
 <!--INICIO REDES SOCIALES -->
     <div class="social">
@@ -67,7 +133,30 @@
   </div>
   <!-- End Fixed Button -->
 
- 
+<!--Inicio Presentacion-->
+<div class="section white">
+    <div class="row container">
+        <h2 class="header center titulo">¿Que ocurre?</h2>
+        <div class="col s4 descr">
+            La tecnología viene revolucionando cada industria, cambiando la forma en la que desarrollamos nuestras actividades,
+             sin embargo, el sistema educativo sigue formando usuarios y espectadores de estas transformaciones.
+        </div>
+        <div class="col s4 descr">
+            Al 2019 habrá un déficit de 450,000 desarrolladores de tecnología en América Latina, siendo la carrera que mayor crecimiento tendrá.
+        </div>
+        <div class="col s4 descr">
+            La Ciencia de la Computación es una materia que actualmente se enseña de forma obligatoria desde los 05 años en varios países.
+        </div>
+    </div>
+</div>
+
+<!--Fin Presentacion-->
+
+
+
+
+
+
 <!-- Inicio Cursos --> 
   <div class="container">
 
@@ -142,6 +231,10 @@
   <!-- End Cursos --> 
  
 
-
+  <script>
+      $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+    </script>
   </body>
 </html>
